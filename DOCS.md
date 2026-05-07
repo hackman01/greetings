@@ -18,8 +18,6 @@ The core feature of Greetify is compositing a user's profile photo and name onto
 ### Key design decisions
 
 - **Canvas over DOM composition**: Rendering to canvas produces a single rasterized image, making download/share straightforward without needing server-side processing.
-- **Responsive sizing**: The overlay dimensions (photo circle radius, font size, padding) are computed as percentages of the canvas width, ensuring the composition scales correctly across different template resolutions.
-- **Fallback avatar**: If the user has no uploaded photo, a DiceBear avatar URL is generated deterministically from their name.
 
 ### Code location
 
